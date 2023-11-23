@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/adaka/OneDrive/Desktop/All programming languages/c++ And oops",
-      "program": "c:/Users/adaka/OneDrive/Desktop/All programming languages/c++ And oops/build/Debug/outDebug",
+      "cwd": "c:/Users/adaka/OneDrive/Desktop/All programming languages/DSA in C++",
+      "program": "c:/Users/adaka/OneDrive/Desktop/All programming languages/DSA in C++/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
