@@ -6,7 +6,7 @@ int main()
     vector<int> v;
   
 
-    cout << v.size() << endl; // output : 0
+cout<< "Size of vector before inialization : " << v.size() << endl; // output : 0
 
     v.push_back(4);
     v.push_back(3);
@@ -14,7 +14,15 @@ int main()
     v.push_back(1);
     v.push_back(6);
 
-    cout <<v.size() << endl; // Now output :5
+    cout << "Now size : " <<v.size() << endl; // Now output :5
+
+cout<<"Display of vector : "<<endl; // Display the vector 
+// display the vector
+for ( int i = 0; i < v.size(); i++)
+{
+    /* code */
+    cout<<v[i]<<endl;
+}
 
     return 0;
 }

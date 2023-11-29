@@ -9,6 +9,7 @@ int sum(int a, int b)
 
 int main()
 {
+    system("cls"); // to clear the output console screen
     cout << "Aniruddha Adak" << endl;
 
     // call the function
