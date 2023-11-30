@@ -1,11 +1,13 @@
+// date - 30/11/2023 by coder army youtube channel
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    string name = "Aniruddha with c++ pointer ";
+    string name = "Aniruddha with c++ pointer by coder army  ";
     string *my_name = &name;
-    cout<<"Size of string pointer is  : " << sizeof(my_name) << endl; //4
+    cout << "Size of string pointer is  : " << sizeof(my_name) << endl; // 4
 
     int num = 10;
     int *ptr = &num;
