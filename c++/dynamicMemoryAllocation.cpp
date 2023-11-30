@@ -5,10 +5,11 @@ int main()
 {
 
     // Dynamic memory allocation for integer
-    int *num = new int;   // use new keyword for dynamic memory  allocation
-    *num = 20;            // Dynamically allocate memory for integer
-    cout<<"Number is : " << *num << endl; // 20  allocated in heap memory
-    cout << "Address of number num is  : "<< num << endl;  // 0x10a1990 ---> address of *num
+    int *num = new int;
+    cout << "Enter  the value of num : ";                  // use new keyword for dynamic memory  allocation
+    cin >> *num;                                           // Dynamically allocate memory for integer
+    cout << "Number is : " << *num << endl;                //  ---->  allocated in heap memory
+    cout << "Address of number num is  : " << num << endl; // ---> address of *num
 
     // dynamic memory allocation for  array
     int n;
@@ -22,7 +23,7 @@ int main()
     // taking input from user
     for (int i = 0; i < n; i++)
     {
-        cin >> ptr[i];  // don't use *ptr[i]
+        cin >> ptr[i]; // don't use *ptr[i]
     }
 
     cout << "All elements are  : " << endl;
