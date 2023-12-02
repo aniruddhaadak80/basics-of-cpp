@@ -1,3 +1,7 @@
+/*
+I learned this topic in 1/11/2023
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -51,7 +55,7 @@ int main()
     }
 
     // sort all elements of v2 using sort() method
-    //* in assending order
+    //* for assending order
     cout << "Sorting of v2 in assending order is : " << endl;
     sort(v2.begin(), v2.end());
     for (auto itr : v2)
@@ -59,7 +63,7 @@ int main()
         cout << itr << endl;
     }
 
-    //* sort v2 in decending order
+    //* sort v2 for decending order
     cout << "Sorting of v2 in decending order is : " << endl;
     sort(v2.begin(), v2.end(), greater<int>()); //! you can also use " sort(v2.rbegin(), v2.rend()) " to sort in decending order
     for (auto itr : v2)
@@ -76,5 +80,5 @@ int main()
 
     //! Binary search in vector using STL
     cout << "Search 2 in  in v2 : " << endl;
-    cout << binary_search(v1.begin(), v1.end(), 2) << endl; // I don't know but something wrong .. It should be 1 as 2 exists in v2 ...
+    cout << binary_search(v1.begin(), v1.end(), 2) << endl; // I don't know but something wrong .. It should be " 1 " as 2 exists in v2 ...
 }

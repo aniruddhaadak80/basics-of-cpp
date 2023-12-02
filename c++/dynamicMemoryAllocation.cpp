@@ -26,7 +26,7 @@ int main()
         cin >> ptr[i]; // don't use *ptr[i]
     }
 
-    cout << "All elements are  : " << endl;
+    cout << "All elements of ptr array are  : " << endl;
     for (int i = 0; i < n; i++)
     {
         cout << ptr[i] << endl; // print elements one by one
