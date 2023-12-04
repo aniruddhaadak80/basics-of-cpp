@@ -1,5 +1,5 @@
 /*
-I learned this topic in 1/11/2023 by coder army youtube channel on yourube
+******************  I learned this topic in 1/11/2023 by coder army youtube channel on yourube  **************
 */
 
 #include <bits/stdc++.h>
@@ -82,8 +82,9 @@ int main()
     cout << "Search 2 in  in v2 : " << endl;
     cout << binary_search(v2.begin(), v2.end(), 2) << endl; // I don't know but something wrong .. It should be " 1 " as 2 exists in v2 ...
 
+
+    //********************** update in 3/12/2023 ************************
     //! minimum_element ,maximum_element , addinf all elements of vector using STL
-    // update in 3/12/2023
     vector<int> vec2 = {1, 2, 3, 4, 2, 3, 6};
 
     int minnimum_element = *min_element(vec2.begin(), vec2.end());

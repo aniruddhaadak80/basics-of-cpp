@@ -1,3 +1,5 @@
+//************************** I did this in 3/12/2023  *****************************
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -51,7 +53,7 @@ int main()
 
     friendFunction(); // call the friendFunction
 
-    /*you cn not call
+    /*you can not call
  normal function like :--->
     NoramlFunction();
     */

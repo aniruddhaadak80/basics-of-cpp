@@ -28,7 +28,7 @@ int main()
     //*********************   OR you can write like this  ********************************
     auto operation = [](int p, int q)
     { return (2 * p + 3 * q); };
-    cout << operation(5, 6) << endl;
+    cout << operation(5, 6) << endl; //28
 
     //! Using "all_of()"  function to verify the positive number exists or not in the vector
     vector<int> v = {1, -2, 3, 4, 5};
