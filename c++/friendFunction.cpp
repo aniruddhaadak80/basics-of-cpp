@@ -22,7 +22,7 @@ void friendFunction()
     // object for friend function .It is only accessable inside friend functon...
     Home obj; // you can not create an object inside the  main function for a  friend function
 
-    cout << "I am friend Functon in C++ " << endl;
+    cout << "I am Friend Functon in C++ :-------------------->" << endl;
     // for privae data  member
     cout << "I can access private data (like ID  ) :--> " << obj.id << endl; // 1
     // for protected data member
@@ -32,11 +32,17 @@ void friendFunction()
     cout << "I can obviously access public data (like favNum  ) :--> " << obj.favNum << endl; // 1
 }
 
-// Access and give description to the noraml function outside the class
-void Home ::NoramlFunction()
+// Access and give description to the noraml function outside the class 
+void Home :: NoramlFunction()
 {
-    Home noraml;
-    cout << "I am Normal Function " << endl;
+    cout << "I am Normal Function :-------------------------> " << endl;
+
+    // for private data member
+    cout << "I can access private data (like ID  ) :--> " << id << endl; // 1
+    // for protected data member
+    cout << "I can also access protected data (like name  ) :--> " << name << endl; // 9
+    // for public data member
+    cout << "I can obviously access public data (like favNum  ) :--> " << favNum << endl; // 1
 }
 
 // start of main function
@@ -45,11 +51,12 @@ int main()
 
     friendFunction(); // call the friendFunction
 
-                      /*you cn not call
-                   normal function like :--->
-                      NoramlFunction();
-                      */
+    /*you cn not call
+ normal function like :--->
+    NoramlFunction();
+    */
 
     Home normal;
-    normal.NoramlFunction();
+    normal.NoramlFunction(); // call normal function
+    normal.favNum;           //* you can access public member through objct but can not access private and protected members
 }

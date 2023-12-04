@@ -1,5 +1,5 @@
 /*
-I learned this topic in 1/11/2023
+I learned this topic in 1/11/2023 by coder army youtube channel on yourube
 */
 
 #include <bits/stdc++.h>
@@ -7,16 +7,16 @@ using namespace std;
 int main()
 {
     //! vector initialization
-    vector<int> v(5, 3); // v(size,element)
+    vector<int> v(5, 3); // v(size,element) //*   output ----> 3,3,3,3,3
     vector<int> v2;
     cout << "All elements of vector v  are : " << endl;
-    //! displa all elements of vectors
+    //! display all elements of vectors
     for (int i = 0; i < 5; i++)
     {
         cout << v[i] << endl;
     }
 
-    //! vector for different element
+    //! vector for different element 
     vector<int> v1 = {3, 4, 5, 6, 7, 3, 2};
     cout << "All elements of vector v1 are : " << endl;
     for (int i = 0; i < 7; i++)
@@ -80,5 +80,35 @@ int main()
 
     //! Binary search in vector using STL
     cout << "Search 2 in  in v2 : " << endl;
-    cout << binary_search(v1.begin(), v1.end(), 2) << endl; // I don't know but something wrong .. It should be " 1 " as 2 exists in v2 ...
+    cout << binary_search(v2.begin(), v2.end(), 2) << endl; // I don't know but something wrong .. It should be " 1 " as 2 exists in v2 ...
+
+    //! minimum_element ,maximum_element , addinf all elements of vector using STL
+    // update in 3/12/2023
+    vector<int> vec2 = {1, 2, 3, 4, 2, 3, 6};
+
+    int minnimum_element = *min_element(vec2.begin(), vec2.end());
+    int maxnimum_element = *max_element(vec2.begin(), vec2.end());
+    int Add_all_elements = accumulate(vec2.begin(), vec2.end(), 0);
+    int Count_of_elements = count(vec2.begin(), vec2.end(), 3);
+
+    cout << "Minimum element of vec2 is  : " << minnimum_element << endl;        // 1
+    cout << "Maximum element of vec2 is  : " << maxnimum_element << endl;        // 6
+    cout << "Addition of all elements of vec2 is :" << Add_all_elements << endl; // 21
+    cout << "Number of 3 in vec2 is  : " << Count_of_elements << endl;           // 2
+
+    //! reverse the vector and string using STL
+    // for vector
+    cout << "Reverse of vec2 is :--->  " << endl;
+    reverse(vec2.begin(), vec2.end());
+    for (auto rev : vec2)
+    {
+        cout << rev << endl;
+    }
+
+    // for string
+    string Myname = "ANIRUDDHA ADAK";
+    reverse(Myname.begin(), Myname.end());
+    cout << "My reverse name looks like :--->  " << Myname << endl;
+
+    return 0;
 }

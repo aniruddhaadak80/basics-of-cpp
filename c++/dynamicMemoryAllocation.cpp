@@ -5,33 +5,33 @@ int main()
 {
 
     // Dynamic memory allocation for integer
-    int *num = new int;
-    cout << "Enter  the value of num : ";                  // use new keyword for dynamic memory  allocation
-    cin >> *num;                                           // Dynamically allocate memory for integer
-    cout << "Number is : " << *num << endl;                //  ---->  allocated in heap memory
-    cout << "Address of number num is  : " << num << endl; // ---> address of *num
+    int *num_ptr = new int; // use new keyword for dynamic memory  allocation
+    cout << "Enter  the value of num_ptr : ";
+    cin >> *num_ptr;                                           // Dynamically allocate memory for integer
+    cout << "Number is : " << *num_ptr << endl;                //  ---->  allocated in heap memory
+    cout << "Address of number num_ptr is  : " << num_ptr << endl; // ---> address of *num_ptr
 
     // dynamic memory allocation for  array
     int n;
     cout << "Enter the size of array : ";
     cin >> n;
 
-    int *ptr = new int[n];
-    cout << "Size of array ptr is : " << n << endl;
+    int *arr_ptr = new int[n];
+    cout << "Size of array arr_ptr is : " << n << endl;
     cout << "Enter elements one by one : " << endl;
 
-    // taking input from user
+    // taking input from user 
     for (int i = 0; i < n; i++)
     {
-        cin >> ptr[i]; // don't use *ptr[i]
+        cin >> arr_ptr[i]; // don't use *ptr[i]
     }
 
-    cout << "All elements of ptr array are  : " << endl;
+    cout << "All elements of arr_ptr array are  : " << endl;
     for (int i = 0; i < n; i++)
     {
-        cout << ptr[i] << endl; // print elements one by one
+        cout <<arr_ptr[i] << endl; // print elements one by one
     }
 
-    delete[] ptr; // memory delete for array
-    delete num;   // memory delete for num
+    delete[] arr_ptr; // memory delete for array
+    delete num_ptr;   // memory delete for num
 }
