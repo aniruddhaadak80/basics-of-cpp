@@ -1,9 +1,8 @@
-
 /*
 Date --->  6/12/2023 at 7:10pm to 8:00 pm evening.
 Topics :- 1. First namespace and first nested namespace .
           2. Second nested namespace .
-          3. Output function without namespace .
+          3. Output function without namespace (obviously it is from std namespace) .
           4. Directive (like :- using)
  
 */
