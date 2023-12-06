@@ -47,6 +47,7 @@ int main()
     cout << endl;
 
     // Print all numbers from 30 to 0
-    cout << " Decrease Numbers : ";
+    cout << " Decrease Numbers : " ;
+    
     Decrease(30);
 }
