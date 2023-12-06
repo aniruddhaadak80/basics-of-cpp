@@ -1,7 +1,7 @@
 /*
-Date -->  6/12/2023 at 10:30 to 11:00 pm afternoon.
+Date -->  6/12/2023 at 10:30 to 11:00 pm at night .
 Topics :- 1.Ordered map i.e ---> MAP STL (map means ordered  map)
-          2.Unordered_map --> don't follow dictionary order 
+          2.Unordered_map --> don't follow dictionary order
 
 */
 
@@ -20,7 +20,7 @@ int main()
     Student_details.insert(pair<int, string>(3, "Nilima"));
     Student_details.insert(pair<int, string>(4, "Puish"));
 
-    // Size of the map name Student_details 
+    // Size of the map name Student_details
     cout << "Size of map name Student_details is : " << Student_details.size() << endl;
     cout << "Maximum Size of map name Student_details is : " << Student_details.max_size() << endl;
 
@@ -33,6 +33,7 @@ int main()
     // clear entire  map
     Student_details.clear();
     cout << "After clear all elements theSize of map name Student_details is : " << Student_details.size() << endl;
+
 
     //***************** 2.Unordered_map --> don't follow dictionary order *********************
     unordered_map<string, string> Address;
@@ -52,4 +53,5 @@ int main()
         cout << "Address of " << pair.first << " --->  " << pair.second << endl;
     }
 
+    return 0;
 }

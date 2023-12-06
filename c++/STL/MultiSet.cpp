@@ -1,12 +1,12 @@
 /*
-Date : 5 /12/2023 at 1:30am -2:40 am night 
+Date : 5 /12/2023 at 1:30am -2:40 am night
 Topics :- 1.multiset STL
           2.count of elements in multiset
           3.find if the multiset is empty or not
           4.Use C programming in C++
           5.maximum Size of multiset
           6.Print the Size of the multiset
-          7.Size of multiset 
+          7.Size of multiset
 
 */
 
@@ -39,7 +39,7 @@ int main()
 
     //************ count of elements in multiset  :--->
     int mult_set_count = count(mult.begin(), mult.end(), 10);
-    cout << " \n Count of 10 in multiset is : " << mult_set_count << endl;
+    cout << "Count of 10 in multiset is : " << mult_set_count << endl;
 
     //*********** find if the multiset is empty or not :--->
     int is_mult_set_empty = mult.empty();
@@ -48,15 +48,22 @@ int main()
     //****************** maximum Size of multiset :--->
     cout << "Maximum Size of multiset is : " << mult.max_size() << endl;
 
-    // ****************** clear the multiset :--->
+    //*******************  Add all elements of multiset *******************
+    cout << "Adding all elements of multiset : " << accumulate(mult.begin(), mult.end(), 0) << endl;
+
+    //******************** Erase all 10 from multiset ****************
+    cout << "Removing all 10 from multiset : " << mult.erase(10) << endl; // 2
+
+    //****************** clear the multiset ************************
     mult.clear();
+
     //************************** Now Print the Size of the multiset :--->
     cout << "Now after clearing all elements from multiset the  Size of multiset is : " << mult.size() << endl;
 
     //****************  Use C programming in C++ ***************
-    printf(" I can now use printf in my c++ program \n");
+    printf("I can now use printf in my c++ program \n");
     int a;
-    cout << "Enter a number " << endl;
+    cout << "Enter a number : " << endl;
     scanf("%d", &a);
     printf("Your number is : %i ", a);
 
