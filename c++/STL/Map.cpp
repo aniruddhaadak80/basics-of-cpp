@@ -34,23 +34,23 @@ int main()
     Student_details.clear();
     cout << "After clear all elements theSize of map name Student_details is : " << Student_details.size() << endl;
 
-
     //***************** 2.Unordered_map --> don't follow dictionary order *********************
-    unordered_map<string, string> Address;
+    unordered_map<string, string> Address = {{"Bird", "Tree"}, {"Lion", "Forest"}, {"Human", "House"}, {"Fish", "Water"}};
 
-    Address.insert(pair<string, string>("Bird", "Tree"));
-    Address.insert(pair<string, string>("Lion", "Forest"));
-    Address.insert(pair<string, string>("Human", "House"));
-    Address.insert(pair<string, string>("Fish", "Water"));
+    //********** you can use this following too but it is too leanthy ********************
+    // Address.insert(pair<string, string>("Bird", "Tree"));
+    // Address.insert(pair<string, string>("Lion", "Forest"));
+    // Address.insert(pair<string, string>("Human", "House"));
+    // Address.insert(pair<string, string>("Fish", "Water"));
 
     // Size of map
     cout << "Size of unordered_map name Address is : " << Address.size() << endl;
     cout << "Maximum Size of unordered_map name Address is : " << Address.max_size() << endl;
 
     // print all addresses in the unordered list
-    for (auto pair : Address)
+    for (auto itr : Address)
     {
-        cout << "Address of " << pair.first << " --->  " << pair.second << endl;
+        cout << "Address of " << itr.first << " --->  " << itr.second << endl;
     }
 
     return 0;
