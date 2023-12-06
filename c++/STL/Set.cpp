@@ -37,7 +37,7 @@ int main()
     // Print all elements  using display function
     display(s1); // output --- > 10 20 30 40 60
 
-    // number of 40 in s1
+    //count :-->  number of 40 in s1
     cout << "Number of 40 in set : " << count(s1.begin(), s1.end(), 40) << endl; // 1
 
     // Add all elements in s1
