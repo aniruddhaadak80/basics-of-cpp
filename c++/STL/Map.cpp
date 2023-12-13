@@ -2,6 +2,9 @@
 Date -->  6/12/2023 at 10:30 to 11:00 pm at night .
 Topics :- 1.Ordered map i.e ---> MAP STL (map means ordered  map)
           2.Unordered_map --> don't follow dictionary order
+          //*  Update -> 13/12/2023 at 23:45pm -00.00am night 
+          3.map for decending order structure(using greater operator) 
+          4.multimap --> store more than one similer key for different or same values 
 
 */
 
@@ -52,6 +55,35 @@ int main()
     {
         cout << "Address of " << itr.first << " --->  " << itr.second << endl;
     }
+
+    //***************************** map for decending order  *******************************
+    map<int, string, greater<>> gtmap = {{1, "Ani"}, {2, "Kalu"}, {3, "valu"}}; // you have to use greater operator for decending order map
+    cout << "gtmap for decending order " << endl;
+    for (auto itr : gtmap)
+    {
+        cout << itr.first << "---> " << itr.second << endl;
+    }
+
+    //*********************************** multimap in c++   *******************************
+    cout << "Multimap in c++ "<<endl;
+    multimap<int,string> multmap = {{1,"Hii,"},{1,"I am"},{1,"multimap."},{2,"I can strore "} ,{2,"more than one key "},{2,"To store value"}  };
+
+    // Print all key- values in multimap
+    for(auto itr :multmap){
+        cout << itr.first <<"-->"<<itr.second <<endl;
+    }
+    cout << "count of key-1 in multimap is " << multmap.count(1) <<endl;
+
+    cout << "Size of multimap is " << multmap.size() <<endl;
+
+    auto n = multmap.find(1); 
+    cout << n->first << " "  << n->second ;
+    // some info --> 
+    // ? you can use " map<int, vector<string> >" insted of using multimap .
+    // ! but you will face problems to mentain this 
+    // * So you have to use multimap insted of "map<int, vector<string> >" 
+    
+
 
     return 0;
 }

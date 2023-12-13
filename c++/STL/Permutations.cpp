@@ -16,6 +16,8 @@ int main()
     vector<int> perm1 = {2, 3, 4};
     vector<int> perm2 = {9, 5, 6};
 
+ 
+
     //************************* for Next permutation of vector ******************
 
     next_permutation(perm1.begin(), perm1.end());
