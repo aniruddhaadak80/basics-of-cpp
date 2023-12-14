@@ -1,3 +1,12 @@
+/*
+Date -13/12/2023 at 1:00 am to 2:00 am night 
+Topics :-->
+?         1.forward_list (single linked list)
+*         2.list(double linked list)
+
+*/
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,7 +18,8 @@ void display_single_linked_list(forward_list<int> flist)
     }
 }
 
-void display_double_linked_list(list<int> lst)
+void display_double_linked_list(auto lst) 
+// you can use list<int> here insted of auto .But auto is more efficient
 {
     for (auto itr : lst)
     {
@@ -29,7 +39,7 @@ int main()
     display_single_linked_list(flist1);
 
     // insert 9 after 2nd element in flist1
-    cout << "Insert 9 after 2nd element(3) of flist1 :  " << endl;
+    cout << "Insert 9 after 1st element(2) in flist1 :  " << endl;
 
     flist1.insert_after(flist1.begin(), 9);
 
@@ -55,10 +65,9 @@ int main()
 
     cout << "Last node data of lst list is : " << lst.back() << endl;
 
-    // merge lst and lst1 together 
-    lst1 = {34, 45, 56, 67, 78, 89};
+    // merge lst and lst1 together
+    lst1 = {34, 45, 56,43};
     lst.merge(lst1);
     cout << "Merge lst and lst1 : " << endl;
     display_double_linked_list(lst);
-    
 }
