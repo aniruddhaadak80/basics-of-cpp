@@ -17,8 +17,8 @@ int main()
 {
     /* Explanation :-> 
     * It uses padding in operating system .
-    It stores data like -
-     i i i i c c p p f f f f
+    * It stores data like -
+     ? -->  i i i i c c p p f f f f
 *where i-> integer
     *  c-> charecter
      * p -> padding /gap/none
