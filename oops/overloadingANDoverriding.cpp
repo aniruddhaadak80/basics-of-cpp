@@ -21,7 +21,7 @@ public:
 class Derived : public Base
 {
 public:
-  // overriding base class method func() to derived class
+  // overriding base class method {func()} to derived class
   void func()
   {
     cout << "I am a function from derived class " << endl;
